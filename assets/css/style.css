@@ -42,7 +42,7 @@ ul {
 }
 
 #scoreMatch {
-    background-color: green;
+    background-color: #004d99;
     color: white;
     margin: 0px 15px 20px 20px;
     height: 75px;
@@ -55,7 +55,7 @@ ul {
 }
 
 #userScore {
-    background-color: green;
+    background-color:#e67300;
     color: white;
     margin: 0px 15px 20px 20px;
     height: 75px;
@@ -85,11 +85,15 @@ ul {
     width: 150px;
     height: 150px;
     margin: 15px;
+    border-radius: 15px;
     float: left;
+    box-shadow: 7px 7px 15px 0 black;
+
 }
 
 .gems {
     width: 120px;
     height: 120px;
     margin: 15px;
+    border-radius: 15px;
 }

@@ -6,6 +6,7 @@ $(document).ready(function () {
     var button3 = 0;
     var button4 = 0;
 
+
     var yourScore = 0;
     var wins = 0;
     var losses = 0;
@@ -15,9 +16,15 @@ $(document).ready(function () {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    
+
+
     //assigns random number to score player has to match
     var scoreMatch = getRandomInt(19, 120)
-    console.log(scoreMatch);
+    console.log("score to match is: " + scoreMatch);
+
+    var buttonValue = getRandomInt(1, 12)
+    console.log("random button value is: " + buttonValue);
 
     /* 
 

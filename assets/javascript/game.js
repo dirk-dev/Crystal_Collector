@@ -40,7 +40,7 @@ $(document).ready(function () {
     $("#gem1").append(button1);
 
     $("#gem1").on("click", function(){
-        alert("You clicked me!")
+        alert("Gem-1 You clicked me!")
     });
 
     var button2 = $("button");

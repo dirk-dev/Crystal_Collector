@@ -42,16 +42,19 @@ ul {
 }
 
 #scoreMatch {
-    background-color: #004d99;
+    background-color: rgb(6, 53, 97);
     color: white;
     margin: 0px 15px 20px 20px;
     height: 75px;
-    width: 260px;
+    width: 200px;
     padding: 10px 10px 20px 10px;
     font-size: 25px;
     float: left;
     box-shadow: 7px 7px 15px 0 black;
+}
 
+#matchDiv, #scoreDiv, #winsDiv, #lossesDiv {
+    font-size: 55px;
 }
 
 #userScore {
@@ -59,7 +62,7 @@ ul {
     color: white;
     margin: 0px 15px 20px 20px;
     height: 75px;
-    width: 260px;
+    width: 200px;
     padding: 10px 10px 20px 10px;
     font-size: 25px;
     float: left;
@@ -67,17 +70,22 @@ ul {
 
 }
 
-#winsLoses {
+#wins, #losses {
     background-color: green;
     color: white;
     margin: 0px 15px 20px 20px;
     height: 75px;
-    width: 260px;
+    width: 130px;
     padding: 10px 10px 20px 10px;
     font-size: 25px;
-    clear: both;
+    float: left;
     box-shadow: 7px 7px 15px 0 black;
 
+}
+
+#crystals {
+    clear: both;
+    display: flex;
 }
 
 .crystalBox {
@@ -86,7 +94,6 @@ ul {
     height: 150px;
     margin: 15px;
     border-radius: 15px;
-    float: left;
     box-shadow: 7px 7px 15px 0 black;
 
 }

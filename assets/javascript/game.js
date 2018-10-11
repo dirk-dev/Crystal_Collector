@@ -1,12 +1,5 @@
 $(document).ready(function () {
 
-
-    var button1 = 0;
-    var button2 = 0;
-    var button3 = 0;
-    var button4 = 0;
-
-
     var yourScore = 0;
     var wins = 0;
     var losses = 0;
@@ -16,15 +9,67 @@ $(document).ready(function () {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    
-
-
     //assigns random number to score player has to match
     var scoreMatch = getRandomInt(19, 120)
     console.log("score to match is: " + scoreMatch);
 
-    var buttonValue = getRandomInt(1, 12)
-    console.log("random button value is: " + buttonValue);
+    // randomizes each button's value
+    var button1 = getRandomInt(1, 12)
+    console.log("button1 value is: " + button1);
+
+    var button2 = getRandomInt(1, 12)
+    console.log("button2 value is: " + button2);
+
+    var button3 = getRandomInt(1, 12)
+    console.log("button3 value is: " + button3);
+
+    var button4 = getRandomInt(1, 12)
+    console.log("button4 value is: " + button4);
+
+    //puts variables into the scoreboard divs
+    $("#matchDiv").text(scoreMatch);
+
+    $("#scoreDiv").text(yourScore);
+
+    $("#winsDiv").text(wins);
+
+    $("#lossesDiv").text(losses);
+
+    //sets up crystal images as buttons
+    var button1 = $("<button>");
+    $("#gem1").append(button1);
+
+    $("#gem1").on("click", function(){
+        alert("You clicked me!")
+    });
+
+    var button2 = $("button");
+    $("#gem2").append(button2);
+
+    $("#gem2").on("click", function(){
+        alert("You clicked me!")
+    });
+
+    var button3 = $("button");
+    $("#gem3").append(button3);
+
+    $("#gem3").on("click", function(){
+        alert("You clicked me!")
+    });
+
+    var button4 = $("button");
+    $("#gem4").append(button4);
+
+    $("#gem4").on("click", function(){
+        alert("You clicked me!")
+    });
+    
+    
+    
+    
+
+
+    // ------------during the game loop
 
     /* 
 

@@ -1,8 +1,8 @@
 html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    background-image: url("../images/rock-crystal-397955_mod.jpg");
-    background-size: 1800px 1400px;
+    background-image: url("../images/rock-crystal-1603474_1920.jpg");
+    background-size: 1600px 1400px;
     background-color: darkgrey;
 }
 
@@ -45,8 +45,8 @@ ul {
     background-color: rgb(6, 53, 97);
     color: white;
     margin: 0px 15px 20px 20px;
-    height: 75px;
-    width: 200px;
+    height: 90px;
+    width: 160px;
     padding: 10px 10px 20px 10px;
     font-size: 25px;
     float: left;
@@ -61,8 +61,8 @@ ul {
     background-color: #e67300;
     color: white;
     margin: 0px 15px 20px 20px;
-    height: 75px;
-    width: 200px;
+    height: 90px;
+    width: 160px;
     padding: 10px 10px 20px 10px;
     font-size: 25px;
     float: left;
@@ -74,8 +74,8 @@ ul {
     background-color: green;
     color: white;
     margin: 0px 15px 20px 20px;
-    height: 75px;
-    width: 130px;
+    height: 90px;
+    width: 90px;
     padding: 10px 10px 20px 10px;
     font-size: 25px;
     float: left;

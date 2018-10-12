@@ -1,32 +1,64 @@
 $(document).ready(function () {
 
-    var yourScore = 0;
-    var wins = 0;
-    var losses = 0;
+    let yourScore = 0;
+    let wins = 0;
+    let losses = 0;
+
+
+    //assigns random number to score player has to match
+    let scoreMatch = getRandomInt(19, 120)
+
+    // randomizes each button's value
+    let crystal1 = getRandomInt(1, 12)
+
+    let crystal2 = getRandomInt(1, 12)
+
+    let crystal3 = getRandomInt(1, 12)
+
+    let crystal4 = getRandomInt(1, 12)
 
     // generates random whole number between 19 and 120 inclusive
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    //assigns random number to score player has to match
-    var scoreMatch = getRandomInt(19, 120)
-    console.log("score to match is: " + scoreMatch);
+    // resets the random numbers after a win or loss
+    function roundStart() {
 
-    // randomizes each button's value
-    var button1 = getRandomInt(1, 12)
-    console.log("button1 value is: " + button1);
+        scoreMatch = getRandomInt(19, 120)
 
-    var button2 = getRandomInt(1, 12)
-    console.log("button2 value is: " + button2);
+        crystal1 = getRandomInt(1, 12)
 
-    var button3 = getRandomInt(1, 12)
-    console.log("button3 value is: " + button3);
+        crystal2 = getRandomInt(1, 12)
 
-    var button4 = getRandomInt(1, 12)
-    console.log("button4 value is: " + button4);
+        crystal3 = getRandomInt(1, 12)
 
-    //puts variables into the scoreboard divs
+        crystal4 = getRandomInt(1, 12)
+
+        yourScore = 0;
+
+        $("#matchDiv").text(scoreMatch);
+
+        $("#scoreDiv").text(yourScore);
+    }
+
+    // win/loss conditions for end of round
+    function gamePlay() {
+        $("#scoreDiv").text(yourScore);
+        if (yourScore == scoreMatch) {
+            wins++;
+            $("#winsDiv").text(wins);
+            roundStart()
+        }
+
+        if (yourScore > scoreMatch) {
+            losses++;
+            $("#lossesDiv").text(losses);
+            roundStart()
+        }
+    }
+
+    //puts scoring variables into the scoreboard HTML elements
     $("#matchDiv").text(scoreMatch);
 
     $("#scoreDiv").text(yourScore);
@@ -35,67 +67,33 @@ $(document).ready(function () {
 
     $("#lossesDiv").text(losses);
 
-    //sets up crystal images as buttons
-    var button1 = $("<button>");
-    $("#gem1").append(button1);
 
-    $("#gem1").on("click", function(){
-        alert("Gem-1 You clicked me!")
+    //onclick event for adding score to total for each crystal
+    $("#gem1").on("click", function () {
+        yourScore += crystal1;
+        gamePlay();
     });
 
-    var button2 = $("button");
-    $("#gem2").append(button2);
 
-    $("#gem2").on("click", function(){
-        alert("You clicked me!")
+    $("#gem2").on("click", function () {
+        yourScore += crystal2;
+        gamePlay();
     });
 
-    var button3 = $("button");
-    $("#gem3").append(button3);
 
-    $("#gem3").on("click", function(){
-        alert("You clicked me!")
+    $("#gem3").on("click", function () {
+        yourScore += crystal3;
+        gamePlay();
     });
 
-    var button4 = $("button");
-    $("#gem4").append(button4);
 
-    $("#gem4").on("click", function(){
-        alert("You clicked me!")
+    $("#gem4").on("click", function () {
+        yourScore += crystal4;
+        gamePlay();
     });
-    
-    
-    
-    
-
-
-    // ------------during the game loop
-
-    /* 
-
-    Pseudocode for Unit 4 game
-
-    * At start of game - generate random score player must 
-    * match(between 19 and 120), and generate random value 
-    * for each button (between 1 and 12).
-
-    * capture user clicks on each button, add the click to
-    * the total score.
-    
-    * update the total score on screen, and compare to total 
-    * score needed. If user score > total score, continue 
-    * updating score;
-    * 
-    * if user score = total score needed, wins++, reset random 
-    * values, * else losses++ and reset random values
-
-
-    Intialize game with random score and random #s for each gem
-
-
-    */
-
-
 
 
 });
+
+//Link to updated portfolio with this game added to the portfolio page:
+// https://dirk-kiesewetter.github.io/Responsive-Portfolio/portfolio.html

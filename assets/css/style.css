@@ -7,16 +7,16 @@ html {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 60px;
     color: white;
 
 }
 
 #heading {
-    background-color: rgb(45, 84, 124);
+    background-color: rgb(8, 32, 56);
     margin: 20px 150px 20px 20px;
     height: 100px;
-    width: 450px;
+    width: 600px;
     padding: 10px 20px 10px 20px;
     box-shadow: 7px 7px 15px;
 }
@@ -53,7 +53,10 @@ ul {
     box-shadow: 7px 7px 15px 0 black;
 }
 
-#matchDiv, #scoreDiv, #winsDiv, #lossesDiv {
+#matchDiv,
+#scoreDiv,
+#winsDiv,
+#lossesDiv {
     font-size: 55px;
 }
 
@@ -70,7 +73,8 @@ ul {
 
 }
 
-#wins, #losses {
+#wins,
+#losses {
     background-color: green;
     color: white;
     margin: 0px 15px 20px 20px;

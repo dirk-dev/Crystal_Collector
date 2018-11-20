@@ -1,6 +1,6 @@
 # unit-4-game - Crystal Collector
 
-The goal of this **Crystal Collector** is to match, but not exceed the randomly-generated score by clicking on each of the crystal buttons. 
+The goal of **Crystal Collector** is to match, but not exceed the randomly-generated score by clicking on each of the crystal buttons. 
 
 Each button has a randomly-generated value of between 1 and 12.
 

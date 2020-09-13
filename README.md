@@ -8,7 +8,7 @@ If the user matches the computer's score, they win, but if they exceed the score
 
 This game was coded by me, and is maintained by me.
 
-The deployed app can be found at https://dirk-kiesewetter.github.io/unit-4-game/
+The deployed app can be found at https://dirk-dev.github.io/Crystal_Collector/
 
 ---
 

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -20,7 +22,7 @@
             <h1>Crystal Collector</h1>
         </div>
         <div id=gameRules>
-            <h2>Gameplay:</h2>
+            <h2>Gameplay</h2>
             <br>
             <ul>
                 <li>The computer will randomly chose the score at the start of each game.</li>
@@ -33,21 +35,21 @@
             </ul>
 
         </div>
-        <div class="flex-container">
-        <div id=scoreMatch>Score to match: <div id=matchDiv></div>
+        <div class=flex-container>
+        <div id=scoreMatch class=score-boxes>Score <br>to match:<br> <div id=matchDiv></div>
         </div>
-        <div id=userScore>Your <br>score:
+        <div id=userScore class=score-boxes>Your <br>score:
             <br>
             <div id=scoreDiv></div>
         </div>
-        <div id=wins>Wins:<div id=winsDiv></div>
+        <div id=wins class=score-boxes>Wins:<br><div id=winsDiv></div>
         </div>
-        <div id=losses>Losses:<div id=lossesDiv></div>
+        <div id=losses class=score-boxes>Losses:<br><div id=lossesDiv></div>
         </div>
     </div>
 
 
-        <div id=crystals class="flex-container">
+        <div id=crystals class=flex-container>
             <div class=crystalBox>
                 <div><img class=gems id=gem1 src="assets/images/crystal-1685590_640.jpg" alt="Gem 1">
                 </div>

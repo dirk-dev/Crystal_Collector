@@ -1,37 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   background-image: url("../images/ice-639799.jpg");
   background-size: 1600px 1400px;
   background-color: darkgrey;
 }
 
+h1,
+h2,
+#matchDiv,
+#scoreDiv,
+#winsDiv,
+#lossesDiv {
+  font-family: "Teko", sans-serif;
+}
+
 #wrapper {
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  margin: 0 auto;
+  width: 800px;
 }
 
 h1 {
   font-size: 60px;
   color: white;
+  text-decoration: underline;
 }
 
 #heading {
   background-color: rgb(8, 32, 56);
-  margin: 20px 150px 20px 20px;
-  height: 100px;
-  width: 600px;
-  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  padding: 10px;
   box-shadow: 7px 7px 15px;
 }
 
 #gameRules {
-  background-color: #909cbe;
-  margin: 20px 150px 20px 20px;
-  height: 280px;
-  width: 600px;
+  background-color: #a2b0d4;
+  margin: 20px;
   padding: 10px 35px 15px 45px;
   box-shadow: 7px 7px 15px;
 }
@@ -43,23 +51,30 @@ h2 {
 ul {
   list-style: square;
   font-size: 23px;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+}
+
+li {
+  padding-bottom: 10px;
 }
 
 .flex-container {
   display: flex;
+  justify-content: space-evenly;
 }
 
-#scoreMatch {
-  background-color: rgb(6, 53, 97);
+.score-boxes {
+  width: 125px;
+  margin: 20px;
+  padding: 20px;
+  font-size: 27px;
   color: white;
-  margin: 0px 15px 20px 20px;
-  height: 90px;
-  width: 160px;
-  padding: 10px 10px 20px 10px;
-  font-size: 25px;
   box-shadow: 7px 7px 15px 0 black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #matchDiv,
@@ -69,27 +84,20 @@ ul {
   font-size: 55px;
 }
 
-#userScore {
-  background-color: #e67300;
-  color: white;
-  margin: 0px 15px 20px 20px;
-  height: 90px;
-  width: 160px;
-  padding: 10px 10px 20px 10px;
-  font-size: 25px;
-  box-shadow: 7px 7px 15px 0 black;
+#scoreMatch {
+  background-color: rgb(6, 53, 97);
 }
 
-#wins,
-#losses {
+#userScore {
+  background-color: #e67300;
+}
+
+#wins {
   background-color: green;
-  color: white;
-  margin: 0px 15px 20px 20px;
-  height: 90px;
-  width: 90px;
-  padding: 10px 10px 20px 10px;
-  font-size: 25px;
-  box-shadow: 7px 7px 15px 0 black;
+}
+
+#losses {
+  background-color: red;
 }
 
 .crystalBox {
@@ -106,4 +114,39 @@ ul {
   height: 120px;
   margin: 15px;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  ul {
+    font-size: 20px;
+  }
+
+  #wrapper {
+    width: 420px;
+  }
+
+  #matchDiv,
+  #scoreDiv,
+  #winsDiv,
+  #lossesDiv {
+    font-size: 45px;
+  }
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  .score-boxes {
+    width: 125px;
+    height: 150px;
+    margin: 10px;
+  }
 }

@@ -1,118 +1,109 @@
 html {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    background-image: url("../images/ice-639799.jpg");
-    background-size: 1600px 1400px;
-    background-color: darkgrey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-image: url("../images/ice-639799.jpg");
+  background-size: 1600px 1400px;
+  background-color: darkgrey;
 }
 
 #wrapper {
-    position: fixed;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
-
 h1 {
-    font-size: 60px;
-    color: white;
-
+  font-size: 60px;
+  color: white;
 }
 
 #heading {
-    background-color: rgb(8, 32, 56);
-    margin: 20px 150px 20px 20px;
-    height: 100px;
-    width: 600px;
-    padding: 10px 20px 10px 20px;
-    box-shadow: 7px 7px 15px;
+  background-color: rgb(8, 32, 56);
+  margin: 20px 150px 20px 20px;
+  height: 100px;
+  width: 600px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 7px 7px 15px;
 }
 
 #gameRules {
-    background-color: #909cbe;
-    margin: 20px 150px 20px 20px;
-    height: 280px;
-    width: 600px;
-    padding: 10px 35px 15px 45px;
-    box-shadow: 7px 7px 15px;
+  background-color: #909cbe;
+  margin: 20px 150px 20px 20px;
+  height: 280px;
+  width: 600px;
+  padding: 10px 35px 15px 45px;
+  box-shadow: 7px 7px 15px;
 }
 
 h2 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 ul {
-    list-style: square;
-    font-size: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+  list-style: square;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
 }
 
 #scoreMatch {
-    background-color: rgb(6, 53, 97);
-    color: white;
-    margin: 0px 15px 20px 20px;
-    height: 90px;
-    width: 160px;
-    padding: 10px 10px 20px 10px;
-    font-size: 25px;
-    float: left;
-    box-shadow: 7px 7px 15px 0 black;
+  background-color: rgb(6, 53, 97);
+  color: white;
+  margin: 0px 15px 20px 20px;
+  height: 90px;
+  width: 160px;
+  padding: 10px 10px 20px 10px;
+  font-size: 25px;
+  box-shadow: 7px 7px 15px 0 black;
 }
 
 #matchDiv,
 #scoreDiv,
 #winsDiv,
 #lossesDiv {
-    font-size: 55px;
+  font-size: 55px;
 }
 
 #userScore {
-    background-color: #e67300;
-    color: white;
-    margin: 0px 15px 20px 20px;
-    height: 90px;
-    width: 160px;
-    padding: 10px 10px 20px 10px;
-    font-size: 25px;
-    float: left;
-    box-shadow: 7px 7px 15px 0 black;
-
+  background-color: #e67300;
+  color: white;
+  margin: 0px 15px 20px 20px;
+  height: 90px;
+  width: 160px;
+  padding: 10px 10px 20px 10px;
+  font-size: 25px;
+  box-shadow: 7px 7px 15px 0 black;
 }
 
 #wins,
 #losses {
-    background-color: green;
-    color: white;
-    margin: 0px 15px 20px 20px;
-    height: 90px;
-    width: 90px;
-    padding: 10px 10px 20px 10px;
-    font-size: 25px;
-    float: left;
-    box-shadow: 7px 7px 15px 0 black;
-
-}
-
-#crystals {
-    clear: both;
-    display: flex;
+  background-color: green;
+  color: white;
+  margin: 0px 15px 20px 20px;
+  height: 90px;
+  width: 90px;
+  padding: 10px 10px 20px 10px;
+  font-size: 25px;
+  box-shadow: 7px 7px 15px 0 black;
 }
 
 .crystalBox {
-    background-color: white;
-    width: 150px;
-    height: 150px;
-    margin: 15px;
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px 0 black;
-
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 7px 7px 15px 0 black;
 }
 
 .gems {
-    width: 120px;
-    height: 120px;
-    margin: 15px;
-    border-radius: 15px;
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+  border-radius: 15px;
 }
